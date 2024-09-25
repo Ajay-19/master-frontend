@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML REVISION</title>
+    <!--Meta tag is data about data, it holds meta information of a webpage-->
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML revision">
+    <meta name="keywords" content="html,ajay,revision,web development">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <!--<meta http-equiv="refresh" content="30">-->
+  </head>
+  <body>
+    <h1>Just a revision of HTML for interview prep</h1>
+    <hr>
+    <!--This is the anchor tag, used to insert hyper links-->
+    <div>
+      <a href="https://google.com" target="_top" title="Google website link">Google</a>
+      <a href="index2.html" target="_blank">Page 2</a>
+    </div>
+    <br>
+    <!--This is the image tag, used to insert the images-->
+    <div>
+      <img src="images/image1.jpeg" height="300">
+
+      <a href="https://en.wikipedia.org/wiki/Krishna" target="_blank" title="lord Krishna">
+        <img src="images/image2.jpeg" height="300">
+      </a>
+      
+      <a href="https://en.wikipedia.org/wiki/Parrot" target="_blank" title="parrots">
+        <img src="images/image3.jpeg" height="300">
+      </a>
+    </div>
+      
+      
+      <!--audio tag, used to insert audio files into an webpage-->
+
+      <div>
+        <audio controls muted playloop src="Neeve-SenSongsMp3.Co.mp3">
+      </div>
+
+      <!--Video tag, used to insert the video clip into our webpage-->
+      <div>
+        <video controls src="P1540182.mp4" height="500"></video>
+      </div>
+
+      <!--formatting tags -> bold, italic, emphasises,big, small, strong, mark, ins, del, subscript, superscript-->
+      <div>
+
+        <p>Formatting tags</p>
+        <h1>This is <b>bold</b> text</h1>
+        <h2>This is an <i>italic</i> text</h2>
+        <h3>This is <sub>subscript</sub> text</h3>
+        <h4>This is <sup>superscript</sup> text</h4>
+        <h1>This is <strong>strong text</strong></h1>
+        <h6>This is a <em>emphasises</em> text</h6>
+        <h2>This is <small>small</small> text</h2>
+        <h3>This is a <mark>marked</mark>text</h3>
+        <h4>This is a <ins>underlined</ins> text</h4>
+        <h5>This is <del>deleted</del> text</h5>
+
+      </div>
+
+      <!--Table tag , it is used to insert a table into our webpages, it consists tags like <table> <tr> <th> <td>-->
+      <table style="background-color: black;">
+        <tr style="background-color: grey;">
+          <th>Sunday</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+        </tr>
+        <tr style="background-color: lightgray;">
+          <td>Closed</td>
+          <td>9-5 AM</td>
+          <td>9-5 AM</td>
+          <td>9-5 AM</td>
+          <td>9-5 AM</td>
+          <td>9-5 AM</td>
+          <td>Closed</td>
+        </tr>
+      </table>
+
+      <!--List in HTML Ordered list, unordered list, defination list-->
+      <div>
+        <p>Grocery list</p>
+      <ul>
+        <li>Apples</li>
+        <li>Pulses</li>
+        <li>Meat</li>
+        <li>Rice</li>
+      </ul>  
+      <br>
+      <p>
+        Courses list
+      </p>
+      <ol type="A">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+        <li>REACT JS</li>
+      </ol>
+      <br>
+      <dl>
+        <dt>HTML</dt>
+        <dd>It is used to bulid the structure of an webpage</dd>
+        <dt>CSS</dt>
+        <dd>It is used to styling to a webpage</dd>
+        <dt>JavaScript</dt>
+        <dd>It is used to add functionality to a web page</dd>
+      </dl>
+      </div>
+      <!--Span and div tags, span is used to manipulate the specific content of an webpage-->
+      <!--div tag is container-->
+      <div>
+        <button onclick="Change()">Wish</button>
+n for the html, <span style="color: red;">just testing the span tag here by changing the specific color to the red</span></p>
+      </div>
+
+      <!--iframe tag is used to insert another websites to our webapplication, it is mostly used to insert ads to our webpage-->
+      <div>
+        <iframe src="wwww.youtube.com" height="300"></iframe>
+      </div>
+
+      <!--button tag-->
+      <div>
+        <h1 id="text">Hello People</h1>
+      </div>
+
+      <script>
+        function Change(){
+          document.getElementById("text").innerHTML = "Bye people"
+        }
+      </script>
+      <br>
+
+      <!--Form tag, we have different inbuilt tags to develope a form-->
+      <div style="background-color: aquamarine; border-color: black; border-radius: 4px; padding: 10px; margin: 10px;">
+        <form action="" method="post">
+          <div>
+            <label for="Uname">Username :</label>
+            <input type="text" id="Uname" name="Uname">
+          </div>
+          <br>
+          <div>
+            <label for="Pswrd">Password :</label>
+            <input type="password" id="Pswrd" name="Pwrd">
+          </div>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+
+      <div style="background-color: aquamarine; border-color: black; border-radius: 4px; padding: 10px;">
+        <h1>Aplication form </h1>
+        <form>
+          <div>
+            <label for="fname">Firstname :</label>
+            <input type="text" id="fname" name="fname" required placeholder="Ajay">
+          </div>
+          <br>
+          <div>
+            <label for="lname">Lastname :</label>
+            <input type="text" id="lname" name="lname" required placeholder="Siddu">
+          </div>
+          <br>
+          <div>
+            <label for="Pswrd">Password :</label>
+            <input type="password" id="Pswrd" name="Pwrd" required maxlength="12">
+          </div>
+          <br>
+          <div>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required placeholder="mail@gmail.com">
+          </div>
+          <br>
+          <div>
+            <label for="phone">Phone :</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 965-283-8788">
+          </div>
+          <br>
+          <div>
+            <label>Gender : </label>
+            <input type="radio" id="male" name="gender" checked>
+            <label for="male">Male</label>
+            <input type="radio" id="femlae" name="gender">
+            <label for="female">Female</label>
+          </div>
+          <br>
+          <div>
+            <label for="age">Enter the age : </label>
+            <input type="number" id="age" name="age" min="1" max="100">
+          </div>
+          <br>
+          <div>
+            <label>Hobbies : </label>
+            <input type="checkbox" id="cricket" name="Hobbies" checked>
+            <label for="cricket">Playing Cricket</label>
+            <input type="checkbox" id="reading" name="Hobbies">
+            <label for="reading">Reading books</label>
+            <input type="checkbox" id="music" name="Hobbies">
+            <label for="music">Listening to songs</label>
+          </div>
+          <br>
+          <div>
+            <label for="course">Select the Course : </label>
+            <select id="course">
+              <option>HTML</option>
+              <option>CSS</option>
+              <option>JAVASCRIPT</option>
+              <option>REACT JS</option>
+            </select>
+          </div>
+          <br>
+          <div>
+            <input type="reset">
+            <input type="submit">
+          </div>
+        </form>
+      </div>
+      <div>
+
+      <div style="background-color: rgb(229, 216, 240);">
+        <h1>Implementation of pagination</h1>
+        <a href="page1.html">Pagination</a>
+      </div>  
+        <footer>
+          <p>copyrigts reserved, @2024 by <i>Siddu</i></p>
+        </footer>
+      </div>
+
+  </body>
+</html>

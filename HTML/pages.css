@@ -1,0 +1,26 @@
+#container a{
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+  display: inline-block;
+}
+#container{
+  text-align: center;
+  margin-top:50px;
+}
+
+#container a.active
+{
+  background-color: rgb(18, 219, 72);
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+#container a:hover:not(.active)
+{
+  background-color: rgb(172, 170, 171);
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: bold;
+}
